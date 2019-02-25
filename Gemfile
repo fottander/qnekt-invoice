@@ -7,6 +7,7 @@ gem 'pg'
 gem 'bootsnap', '>= 1.1.0', require: false
 
 group :development, :test do
+  gem 'rb-readline'
   gem 'pry-byebug'
   gem 'sqlite3', '~> 1.3', '< 1.4'
 end
