@@ -38,10 +38,11 @@ class App extends Component {
         <Navbar drawerClickHandler = {this.drawerToggleClickHandler} />
         <SideDrawer show={this.state.sideDrawerOpen}/>
         {backdrop}
-        <main style={{marginTop: '4em'}}>
+        <main style={{marginTop: '3.5em'}}>
           <div className="App-header">
-            <h2>Welcome to React</h2>
-
+            <h2>Ska du fakturera utan företag som privatperson?</h2>
+            <h4>Vad söker du efter?</h4>
+            
           </div>
           <p className="App-intro">
             To get started, edit and save to reload.
