@@ -23,7 +23,6 @@ module QnektInvoice
     # Initialize configuration defaults for originally generated Rails version.
 
     config.api_only = true
-    config.app_generators.scaffold_controller = :scaffold_controller
     config.load_defaults 5.2
     config.middleware.use Rack::MethodOverride
     config.middleware.use ActionDispatch::Flash
