@@ -5,4 +5,12 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-AdminUser.create!(email: 'admin@example.com', password: 'password', password_confirmation: 'password') if Rails.env.development?
+
+Post.delete_all
+
+Post.create(
+  title: "This is my negroni recipe",
+  content: "Hey I wanted to tell you my secret neggroni recipe."
+  )
+
+puts "Created #{Post.count} posts"
