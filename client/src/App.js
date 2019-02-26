@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import logo from './images/Företag-bild-front.jpg';
 import './App.css';
+import Button from 'react-bootstrap/Button';
 
 class App extends Component {
   componentDidMount() {
@@ -13,11 +14,13 @@ class App extends Component {
     return (
       <div className="App">
         <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
           <h2>Welcome to React</h2>
+          <Button variant="primary" size="sm">
+            Small button
+          </Button>
         </div>
         <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
+          To get started, edit and save to reload.
         </p>
       </div>
     );
