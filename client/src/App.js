@@ -1,27 +1,52 @@
 import React, { Component } from 'react';
-import logo from './images/Företag-bild-front.jpg';
+import './images/Företag-bild-front.jpg';
 import './App.css';
-import Button from 'react-bootstrap/Button';
+import Navbar from './components/Navbar/Navbar';
+import SideDrawer from "./components/SideDrawer/SideDrawer";
+import Backdrop from "./components/Backdrop/Backdrop";
 
 class App extends Component {
+  state = {
+    sideDrawerOpen: false
+  };
+  drawerToggleClickHandler = () => {
+    this.setState((prevState) => {
+      return {sideDrawerOpen: !prevState.sideDrawerOpen};
+    });
+  };
+
+  backdropClickHandler = () => {
+    this.setState({sideDrawerOpen: false});
+  };
+
   componentDidMount() {
     window.fetch('api/posts')
       .then(response => response.json())
       .then(json => console.log(json))
       .catch(error => console.log(error))
   }
+
   render() {
+    let backdrop;
+
+    if (this.state.sideDrawerOpen) {
+      backdrop = <Backdrop click={this.backdropClickHandler} />
+    }
+
     return (
-      <div className="App">
-        <div className="App-header">
-          <h2>Welcome to React</h2>
-          <Button variant="primary" size="sm">
-            Small button
-          </Button>
-        </div>
-        <p className="App-intro">
-          To get started, edit and save to reload.
-        </p>
+      <div style={{height: '100%'}}>
+        <Navbar drawerClickHandler = {this.drawerToggleClickHandler} />
+        <SideDrawer show={this.state.sideDrawerOpen}/>
+        {backdrop}
+        <main style={{marginTop: '4em'}}>
+          <div className="App-header">
+            <h2>Welcome to React</h2>
+
+          </div>
+          <p className="App-intro">
+            To get started, edit and save to reload.
+          </p>
+        </main>
       </div>
     );
   }
