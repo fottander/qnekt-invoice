@@ -1,0 +1,157 @@
+.App-header {
+  background-image: url(./pexels-photo-251225.jpg);
+  height: 80vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  text-align: center;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  padding-right: 0.5em;
+  padding-left: 0.5em;
+}
+
+.App-header h1 {
+  font-weight: 900;
+}
+
+.Content-divider {
+  display: flex;
+  background: #fce8e6;
+  margin-top: 2em;
+  padding-top: 5em;
+  padding-bottom: 5em;
+  margin-right: -5em;
+  margin-left: -5em;
+  border-radius: 50% 50% 0px 0px;
+  align-items: center;
+  justify-content: center;
+}
+
+.Content-divider .Compare {
+  padding-left: 5em;
+  padding-right: 5em;
+  margin-top: -2em;
+}
+
+.Content-divider .Compare h2 {
+  text-align: center;
+  padding-left: 0.2em;
+  padding-right: 0.2em;
+}
+
+.Content-divider .Compare .Table-holder {
+  background: white;
+  width: 80%;
+  margin-top: 2em;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 5px 5px 10px rgba(51, 51, 51, 0.3);
+}
+
+.Content-divider-2 {
+  background: #f9f5ee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 3em;
+  padding-bottom: 3em;
+}
+
+.Content-divider-2 .Comp-divider {
+  background: white;
+  width: 60%;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  padding: 0em 2em 1em 2em;
+  box-shadow: 5px 5px 10px rgba(51, 51, 51, 0.3);
+}
+
+@media (max-width: 45em) {
+  .Content-divider-2 .Comp-divider {
+    width: 90%;
+  }
+}
+
+.Content-divider-2 .Comp-divider h3 {
+  color: #00696a;
+}
+
+.Content-divider-2 .Comp-divider .Comp-title {
+  display: flex;
+  align-items: center;
+}
+
+.Content-divider-2 .Comp-divider .Comp-title .comp-spacer {
+  flex: 1;
+}
+
+.Content-divider-2 .Comp-divider .Comp-title img {
+  width: 8em;
+}
+
+.Button-row {
+  margin-top: 2em;
+  display: flex;
+}
+
+.Button-divider {
+  width: 2em;
+}
+
+.Content-divider-3 {
+  background: #00696a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 3em;
+  padding-bottom: 3em;
+}
+
+.Content-divider-3 .Readmore {
+  text-align: center;
+  margin: 2em 2em 2em 2em;
+  padding: 1em 1em 1em 1em;
+}
+
+.Content-divider-3 .Readmore h3 {
+  color: white;
+}
+
+#link-1 {
+  color: #fd5f53;
+}
+
+#button-1 {
+  background-color: #fd5f53;
+  color: white;
+  text-align: center;
+  line-height: 1;
+  font-size: 1.3rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  padding: 1.5rem 3.05rem 1.5rem;
+  border-radius: 4px;
+}
+
+#button-2 {
+  background-color: #00696a;
+  color: white;
+  text-align: center;
+  line-height: 1;
+  font-size: 1.3rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  padding: 1.5rem 3.05rem 1.5rem;
+  border-radius: 4px;
+}
