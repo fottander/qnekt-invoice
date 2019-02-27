@@ -5,6 +5,7 @@ import coolCompany from './cool-company.png';
 import ukkoImage from './ukko.png';
 import firmifyImage from './firmify.png';
 import App from '../App/App';
+import Footer from '../Footer/Footer';
 import './Home.css';
 
 const home = () => (
@@ -16,9 +17,10 @@ const home = () => (
       <div className="Button-row">
         <a id="button-1" href="#section1">Jämför tjänster</a>
         <div className="Button-divider" />
-        <a id="button-2" href="#section1">Hur fungerar det</a>
+        <a id="button-2" href="#section2">Hur fungerar det</a>
       </div>
     </div>
+    <div id="section1" />
     <div className="Content-divider">
       <div className="Compare">
         <h2>Jämför de olika företagen där du kan fakturera utan företag</h2>
@@ -100,6 +102,13 @@ const home = () => (
         <p>Firmify är en värdig uppstickare till de större aktörerna på svenska marknaden.</p>
       </div>
     </div>
+    <div id="section2" />
+    <div className="Content-divider-3">
+      <div className="Readmore">
+        <h3>Hur fungerar det när man fakturerar utan företag?</h3>
+      </div>
+    </div>
+    <Footer />
   </div>
 )
 

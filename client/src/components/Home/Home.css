@@ -109,6 +109,25 @@
   width: 2em;
 }
 
+.Content-divider-3 {
+  background: #00696a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 3em;
+  padding-bottom: 3em;
+}
+
+.Content-divider-3 .Readmore {
+  text-align: center;
+  margin: 2em 2em 2em 2em;
+  padding: 1em 1em 1em 1em;
+}
+
+.Content-divider-3 .Readmore h3 {
+  color: white;
+}
+
 #link-1 {
   color: #fd5f53;
 }
