@@ -5,10 +5,7 @@ import coolCompany from './cool-company.png';
 import ukkoImage from './ukko.png';
 import firmifyImage from './firmify.png';
 import App from '../App/App';
-<<<<<<< HEAD
-=======
 import Footer from '../Footer/Footer';
->>>>>>> 0ff388d47770a0351371d9da6fe130e41b2c710c
 import './Home.css';
 
 const home = () => (
@@ -20,16 +17,10 @@ const home = () => (
       <div className="Button-row">
         <a id="button-1" href="#section1">Jämför tjänster</a>
         <div className="Button-divider" />
-<<<<<<< HEAD
-        <a id="button-2" href="#section1">Hur fungerar det</a>
-      </div>
-    </div>
-=======
         <a id="button-2" href="#section2">Hur fungerar det</a>
       </div>
     </div>
     <div id="section1" />
->>>>>>> 0ff388d47770a0351371d9da6fe130e41b2c710c
     <div className="Content-divider">
       <div className="Compare">
         <h2>Jämför de olika företagen där du kan fakturera utan företag</h2>
@@ -111,8 +102,6 @@ const home = () => (
         <p>Firmify är en värdig uppstickare till de större aktörerna på svenska marknaden.</p>
       </div>
     </div>
-<<<<<<< HEAD
-=======
     <div id="section2" />
     <div className="Content-divider-3">
       <div className="Readmore">
@@ -120,7 +109,6 @@ const home = () => (
       </div>
     </div>
     <Footer />
->>>>>>> 0ff388d47770a0351371d9da6fe130e41b2c710c
   </div>
 )
 
