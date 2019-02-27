@@ -37,7 +37,7 @@ const home = () => (
             <tbody>
               <tr>
                 <th scope="row"><a id="link-1" href="#comp-1">Frilans Finans</a></th>
-                <td>Mark</td>
+                <td>Markster</td>
                 <td>Otto</td>
                 <td>@mdo</td>
               </tr>
