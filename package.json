@@ -1,4 +1,15 @@
 {
+  "name": "qnekt-inovoice",
+  "license": "MIT",
+  "engines": {
+    "node": "8.9.4",
+    "yarn": "1.6.0"
+  },
+  "scripts": {
+   "build": "yarn --cwd client install && yarn --cwd client build",
+   "deploy": "cp -a client/build/. public/",
+   "heroku-postbuild": "yarn build && yarn deploy"
+  },
   "dependencies": {
     "react": "^16.8.3",
     "react-router": "^4.3.1",
