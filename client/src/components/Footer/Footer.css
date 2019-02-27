@@ -1,0 +1,12 @@
+.Footer-content {
+  background: black;
+  padding: 2rem 2rem 2rem 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.Footer-div {
+  margin: 1em;
+  color: white;
+  text-align: center;
+}
