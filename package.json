@@ -1,17 +1,11 @@
 {
-  "name": "qnekt-invoice",
-  "version": "0.1.0",
-  "private": true,
-  "proxy": "http://localhost:3001",
-  "dependencies": {
-    "react": "^16.8.3",
-    "react-router": "^4.3.1",
-    "react-router-dom": "^4.3.1"
+  "name": "list-of-ingredients",
+  "engines": {
+    "node": "10.15.1"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "build": "cd client && npm install && npm run build && cd ..",
+    "deploy": "cp -a client/build/. public/",
+    "postinstall": "npm run build && npm run deploy && echo 'Client built!'"
   }
 }
